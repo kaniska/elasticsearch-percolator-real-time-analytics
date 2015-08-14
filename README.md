@@ -43,12 +43,18 @@ curl http://es.tools.prod.walmart.com/jenkins_metrics/.percolator/server-monitor
 5) percolator test code : https://github.com/elasticsearch/elasticsearch/blob/master/src/test/java/org/elasticsearch/percolator/PercolatorTests.java
 
 6) nice percolator usecase : http://blog.qbox.io/birdwatch-twitter-analysis-with-elasticsearch
+
 7) Google Guice Dynamic plgin loader :  https://github.com/google/guice/tree/master/lib/build
+
 8) Query DSL :  http://www.elasticsearch.org/guide/en/elasticsearch/client/java-api/current/query-dsl-queries.html , http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/query-dsl-filtered-query.html
+
 9)   sorting :  http://www.elasticsearch.org/guide/en/elasticsearch/guide/current/_sorting.html             
+
 10) aggregation : http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/search-aggregations-bucket-terms-aggregation.html
+
 11)   discover modules dynamically : https://github.com/ronmamo/reflections  , http://stackoverflow.com/questions/2799316/how-to-collect-and-inject-all-beans-of-a-given-type-in-spring-xml-configuration
-10) Other pointers :
+
+12) Other pointers :
 http://altfatterz.blogspot.com/2013/09/playing-with-distributed-percolator.html
 https://github.com/altfatterz/elasticsearch-fun/blob/master/pom.xml
 http://www.programcreek.com/java-api-examples/index.php?api=org.elasticsearch.action.index.IndexResponse
