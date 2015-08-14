@@ -146,7 +146,7 @@ public class PercolatorSample {
         
         
         GetMappingsResponse mappingsResponse = client.admin().indices().prepareGetMappings("biz_docs").get();
-        Map<String, Object> properties = (Map<String, Object>) mappingsResponse.getMappings().get("biz_docs").get("buildinfo").getSourceAsMap().get("properties");
+        Map<String, Object> properties = (Map<String, Object>) mappingsResponse.getMappings().get("biz_docs").get("biz_entity").getSourceAsMap().get("properties");
        
         for (Entry<String, Object> entry : properties.entrySet()) {
         	 System.out.println(entry.getKey() + " : " + entry.getValue()); 
@@ -177,7 +177,7 @@ public class PercolatorSample {
         return bizInfo;
     }
 
-    private String toJson(BuildInfo bizInfo) throws IOException {
+    private String toJson(BizInfo bizInfo) throws IOException {
         return jsonBuilder()
                 .startObject()
                     .field("rundate", bizInfo.getRunDate())
