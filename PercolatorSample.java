@@ -52,7 +52,7 @@ public class PercolatorSample {
 	}
 
 	public void setUp() throws Exception {
-        node = nodeBuilder().clusterName("es.cluster1").node();
+        node = nodeBuilder().clusterName("es.cluster12").node();
         client = node.client();
         
         try {
