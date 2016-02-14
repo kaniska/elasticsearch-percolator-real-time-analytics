@@ -29,7 +29,7 @@ This is a reporter for the metrics library, similar to the graphite or ganglia r
 Then percolation listeners invoke custom Notifiers ( Http / Pager / Web Sockets ) to send the events 
 This is useful for aggregating various attribute values of HTTP metrics / JVM metrics / any other info published by JMX
 
-curl http://es.tools.prod.walmart.com/jenkins_metrics/.percolator/server-monitor -X PUT -d '{ "query" : { "bool" : { "must": [ { "term": { "name" : "app.responsetime" } }, { "range": { "t1": { "to" : "5" } } } ] } } }'
+curl http://<my_es_cluster>/jenkins_metrics/.percolator/server-monitor -X PUT -d '{ "query" : { "bool" : { "must": [ { "term": { "name" : "app.responsetime" } }, { "range": { "t1": { "to" : "5" } } } ] } } }'
 
 #### References :
 1) nice presentation : https://speakerdeck.com/javanna/whats-new-in-percolator
