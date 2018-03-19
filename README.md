@@ -59,3 +59,4 @@ http://altfatterz.blogspot.com/2013/09/playing-with-distributed-percolator.html
 https://github.com/altfatterz/elasticsearch-fun/blob/master/pom.xml
 http://www.programcreek.com/java-api-examples/index.php?api=org.elasticsearch.action.index.IndexResponse
 
+13) Alternatives to Elasticsearch Percolate Queries: Manticore Search PQ (https://manticoresearch.com/), Luwak (https://github.com/flaxsearch/luwak)
